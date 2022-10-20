@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/gabriel-suba/job-listing/static/css/main.ecd76cbf.css",
+    "main.js": "/gabriel-suba/job-listing/static/js/main.88d136b7.js",
+    "static/media/bg-header-desktop.svg": "/gabriel-suba/job-listing/static/media/bg-header-desktop.752d0faf14c00c6fb55f.svg",
+    "index.html": "/gabriel-suba/job-listing/index.html",
+    "main.ecd76cbf.css.map": "/gabriel-suba/job-listing/static/css/main.ecd76cbf.css.map",
+    "main.88d136b7.js.map": "/gabriel-suba/job-listing/static/js/main.88d136b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecd76cbf.css",
+    "static/js/main.88d136b7.js"
+  ]
+}
