@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap');
+
+:root {
+	/* colors */
+	--primary-dcyan: hsl(180, 29%, 50%);
+	--neutral-background: hsl(180, 52%, 96%);
+	--neutral-tablets: hsl(180, 31%, 95%);
+	--neutral-dgcyan: hsl(180, 8%, 52%);
+	--neutral-vdgcyan: hsl(180, 14%, 20%);
+
+	/* typography */
+	--primary-font: 'League Spartan', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--neutral-background);
+	color: var(--neutral-vdgcyan);
+	font-family: var(--primary-font);
+	font-size: 15px;
+}
+
+/* utility class */
+
+.spacing {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 65rem;
+}
+
+.font-semibold {
+	font-weight: 500;
+}
+
+.font-bold {
+	font-weight: 700;
+}
+
+.font-cyan {
+	color: var(--primary-dcyan);
+}
+
+.bg-cyan {
+	background-color: var(--primary-dcyan);
+	color: var(--neutral-tablets);
+}
+
+.bg-dcyan {
+	background-color: var(--neutral-vdgcyan);
+	color: var(--neutral-tablets);
+}
+
+/* end of utility class */
+
+.header-bg {
+	background-image: url('../public/images/bg-header-desktop.svg');
+	background-color: var(--neutral-dgcyan);
+	height: 9.5rem;
+}
+
+.filter {
+	background: var(--neutral-background);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: -3.2rem;
+	padding: 1.5rem 2rem;
+	border-radius: 6px;
+	box-shadow: 0px 13px 35px -8px hsl(180, 8%, 52%);
+}
+
+.match-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.2rem;
+}
+
+.match-item {
+	padding: 0.5rem;
+	background-color: var(--neutral-tablets);
+	color: var(--primary-dcyan);
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	font-weight: 700;
+}
+
+.match-item-cross {
+	padding: 0.5rem;
+	background-color: var(--primary-dcyan);
+	color: var(--neutral-tablets);
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font-weight: 700;
+}
+
+.match-item-cross:hover {
+	background-color: var(--neutral-vdgcyan);
+	cursor: pointer;
+}
+
+.clear:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.tablet {
+	background: var(--neutral-background);
+	min-width: 20rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 1rem;
+	padding: 1rem;
+	border-radius: 6px;
+	box-shadow: 0px 13px 35px -8px hsl(180, 8%, 52%);
+}
+
+.featured {
+	border-left: 5px solid var(--primary-dcyan);
+}
+
+.top {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.logo {
+	width: 5rem;
+	height: 5rem;
+}
+
+.logo img {
+	width: 100%;
+	height: 100%;
+}
+
+.company {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.2rem;
+}
+
+.tags {
+	display: flex;
+	gap: 0.5rem;
+
+}
+
+.tags div {
+	display: flex;
+	justify-content: center;
+	padding: 0.25rem 0.6rem;
+	border-radius: 15rem;
+}
+
+.position {
+	font-size: 1.25rem;
+}
+
+.position span:hover {
+	color: var(--primary-dcyan);
+	cursor: pointer;
+}
+
+.info {
+	display: flex;
+	gap: 0.5rem;
+	color: rgb(172, 172, 172);
+	font-weight: 500;
+}
+
+.bottom {
+	flex: 1;
+	min-width: 16.3rem;
+}
+
+.bottom-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 1.3rem;
+}
+
+.bottom-container span {
+	padding: 0.5rem;
+	background-color: var(--neutral-tablets);
+	color: var(--primary-dcyan);
+	border-radius: 8px;
+	font-weight: 700;
+}
+
+.bottom-container span:hover {
+	background-color: var(--primary-dcyan);
+	color: var(--neutral-tablets);
+	cursor: pointer;
+}
+
+hr {
+	display: none;
+}
+
+@media screen and (max-width: 755px) {
+	.tablet {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-top: 2rem;
+	}
+
+	.logo {
+		margin-top: -3rem;
+	}
+
+	.bottom div {
+		justify-content: flex-start;
+	}
+
+	hr {
+		display: block;
+		width: 100%;
+		border: none;
+		height: 1px;
+		background-color: rgb(172, 172, 172);
+	}
+}
